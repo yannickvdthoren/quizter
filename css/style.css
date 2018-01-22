@@ -1,0 +1,747 @@
+/* -----------------------------------------------------------------------------------------------------------
+TMP Fonts
+----------------------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?wp5vmb');
+  src:url('fonts/icomoon.eot?wp5vmb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?wp5vmb') format('truetype'),
+    url('fonts/icomoon.woff?wp5vmb') format('woff'),
+    url('fonts/icomoon.svg?wp5vmb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-resize-full-screen:before {
+  content: "\e800";
+}
+/* -----------------------------------------------------------------------------------------------------------
+Generals 
+----------------------------------------------------------------------------------------------------------- */
+h3 span{color: #EB1C2E;}
+a{transition: all .3s ease-in-out;}
+a h2:hover, a h3:hover{color: #EB1C2E;transition: all 0.3s ease-in-out;}
+div.date-author{color: #c1c1c2;font-weight: 100;font-size: 13px;position: absolute;}
+/* -----------------------------------------------------------------------------------------------------------
+RadiumOne Buttons 
+----------------------------------------------------------------------------------------------------------- */
+body.dataspot section.full-view-header a.pw-button span.pw-icon, body.dataspot div.post-footer a.pw-button span.pw-icon, body.dataspot div.focus a.pw-button span.pw-icon{background: url(../img/SVG/radium.svg) -2px -4px no-repeat;background-size: 90px 50px;}
+body.dataspot section.full-view-header a.pw-button span.pw-icon:hover, body.dataspot div.post-footer a.pw-button span.pw-icon:hover, body.dataspot div.focus a.pw-button span.pw-icon:hover{background-position: -2px -30.8px;}
+body.dataspot section.full-view-header a.pw-button-twitter span.pw-icon, body.dataspot div.post-footer a.pw-button-twitter span.pw-icon, body.dataspot div.focus a.pw-button-twitter span.pw-icon{background-position: -23px -5px;}
+body.dataspot section.full-view-header a.pw-button-twitter span.pw-icon:hover, body.dataspot div.post-footer a.pw-button-twitter span.pw-icon:hover, body.dataspot div.focus a.pw-button-twitter span.pw-icon:hover{background-position: -23px -30.8px;}
+body.dataspot section.full-view-header a.pw-button-email span.pw-icon, body.dataspot div.post-footer a.pw-button-email span.pw-icon, body.dataspot div.focus a.pw-button-email span.pw-icon{background-position: -44px -5px;}
+body.dataspot section.full-view-header a.pw-button-email span.pw-icon:hover, body.dataspot div.post-footer a.pw-button-email span.pw-icon:hover, body.dataspot div.focus a.pw-button-email span.pw-icon:hover{background-position: -44px -30.8px;}
+body.dataspot section.full-view-header a.pw-button-print span.pw-icon, body.dataspot div.post-footer a.pw-button-print span.pw-icon, body.dataspot div.focus a.pw-button-print span.pw-icon{background-position: -65px -5px;}
+body.dataspot section.full-view-header a.pw-button-print span.pw-icon:hover, body.dataspot div.post-footer a.pw-button-print span.pw-icon:hover, body.dataspot div.focus a.pw-button-print span.pw-icon:hover{background-position: -65px -30.8px;}
+/* -----------------------------------------------------------------------------------------------------------
+tKit tailles
+----------------------------------------------------------------------------------------------------------- */
+.taille12{font-size: 12px !important;}
+.taille14{font-size: 14px !important;}
+.taille16{font-size: 16px !important;}
+.taille18{font-size: 18px !important;}
+.tailleh2{font-size: 24px !important;}
+.tailleh1{font-size: 36px !important;}
+/* -----------------------------------------------------------------------------------------------------------
+tKit buttons 
+----------------------------------------------------------------------------------------------------------- */
+.tKit-Button{
+  text-decoration: none;
+  padding:10px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 100;
+  transition: all .3s ease-in-out;
+}
+.tKit-Button:hover{
+  background: #F4F4F4;
+  color: #999 !important;
+  transition: all .3s ease-in-out;
+}
+.buttonWhite{background:#FFF;}
+.buttonLightGrey{background:#f4f4f4;color: #999 !important;}
+.buttonLightGrey:hover{background: #e1e1e1;}
+/* -----------------------------------------------------------------------------------------------------------
+tKit inputs 
+----------------------------------------------------------------------------------------------------------- */
+.tKit-input{
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background: transparent;
+  padding: 7px 0px;
+  margin-bottom: 10px;
+  color: #999;
+  border: none !important;
+  border-bottom: 2px solid #e1e1e1 !important;
+  transition: all .3s ease-in-out;
+}
+.tKit-input:focus{
+  outline:none;
+  border-bottom: 2px solid #EB1C2E !important;
+  transition: all .3s ease-in-out;
+}
+.tKit-label{
+  font-size: 12px;
+  color: #999;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Source Sans Pro'; Helvetica, Arial, sans-serif;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Facebook like and Twitter follow buttons 
+----------------------------------------------------------------------------------------------------------- */
+div.tKit-social a{
+  z-index: 0;
+}
+div.tKit-social a.tKit-social-follow:before {
+  content: "";
+  position: absolute;
+  z-index: -1 !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+div.tKit-social a.tKit-social-follow:hover::before, div.tKit-social a.tKit-social-follow:focus::before, div.tKit-social a.tKit-social-follow:active::before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+div.tKit-social a.tKit-social-follow{
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  vertical-align: top;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+div.tKit-social a.tKit-social-follow#tKit-social-Facebook{
+  margin-right: 10px;
+}
+div.tKit-social a.tKit-social-follow span{
+  height: 40px;
+  line-height:40px;
+  width: 100%;
+  font-size: 18px;
+  display: block;
+  box-shadow: 0px 0px 10px 0px rgba(102,102,102,.2);
+  background: #FFF;
+  transition:all .3s ease-in-out;
+}
+div.tKit-social a.tKit-social-follow span.icon-facebook{
+  color: #3b5998;
+}
+div.tKit-social a.tKit-social-follow span.icon-twitter{
+  color: #55acee;
+}
+div.tKit-social a.tKit-social-follow:hover > span{
+  color: #fff;
+  background: transparent;
+  transition:all .3s ease-in-out;
+}
+div.tKit-social a.tKit-social-follow:hover > p{
+  box-shadow: none;
+}
+div.tKit-social a.tKit-social-follow p{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  height: 20px;
+  line-height:20px;
+  color: #FFF;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  box-shadow: inset 0px 10px 5px 0px rgba(102,102,102,.2);
+}
+div.tKit-social a.tKit-social-follow#tKit-social-Facebook p, #tKit-social-Facebook.tKit-social-follow::before{
+  background: #3b5998;
+}
+div.tKit-social a.tKit-social-follow#tKit-social-Twitter p, #tKit-social-Twitter.tKit-social-follow::before{
+  background: #55acee;
+}
+/* -----------------------------------------------------------------------------------------------------------
+H6 & Line
+----------------------------------------------------------------------------------------------------------- */
+/*
+To personnalise the H6 color, use this code ! For your section only, use the name of your section before the dic.h6line !
+
+h6{
+  color: #f5c532;
+}
+.h6Line span.line:after{
+  background: #f5c532 !important;
+}*/
+div.h6Line {
+    display:table;
+}
+div.h6Line div {
+    display:table-row;
+    line-height:1.5em;
+    white-space:nowrap;
+}
+div.h6Line h6 {
+    display:table-cell;
+    vertical-align:middle;
+    width:1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+div.h6Line span.line {
+    display:table-cell;
+    width:100%;
+}
+div.h6Line h6 {
+    padding-right:20px;
+}
+div.h6Line span.line:after {
+    display:inline-block;
+    width:100%;
+    content:".";
+    color:transparent;
+    height:1px;
+    vertical-align:middle;
+    position:relative;
+    top:-1px;
+    margin-right: 40px;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Ui Cols
+----------------------------------------------------------------------------------------------------------- */
+section.tKit-full{
+  width: 100%;
+}
+.tKit-2col{
+  width: 66.6666666667%;
+  float: left; 
+}
+.tKit-1col{
+  width: 33.3333333333%;
+  float: left;
+}
+.tKit-2col1{
+  width: 50%;
+  float: left; 
+}
+@media screen  and (max-width: 750px){
+  .tKit-2col, .tKit-1col, .tKit-2colLeft, .tKit-2col1{
+    width: 100% !important;
+  }
+}
+/* -----------------------------------------------------------------------------------------------------------
+Header Rubriques
+----------------------------------------------------------------------------------------------------------- */
+section.header-rubriques{
+  padding: 20px 0 17px 0;
+  display: block;
+}
+section.header-rubriques div.tKit-social{
+  text-align: right;
+  padding-right: 10px;
+  width: 30%;
+}
+section.header-rubriques div.rubName{
+  padding-top: 5px;
+  padding-left: 10px;
+}
+section.header-rubriques a.rubLogo{
+  display: inline-block;
+  background: url(../img/logoDataSpot.svg) center center no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 50px;
+  vertical-align: middle;
+}
+section.header-rubriques h3#rubBaseline{
+  display: inline-block;
+  margin-left: 30px;
+  color:#c1c1c2;
+  font-weight: 300;
+}
+/* --------- Header article 1.000px --------- */
+section.header-rubriques.header1000{
+  background: #F4F4F4;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Focus
+----------------------------------------------------------------------------------------------------------- */
+div.focus{
+    margin: 20px;
+    height: 450px;
+    box-shadow: 0px 0px 5px 2px rgba(102,102,102,.2);
+    background: #FFF;
+}
+div.focus div.focus-img-frame{
+  height: inherit;
+  overflow: hidden;
+}
+div.focus div.focus-article{
+  width: 30%;
+  height: inherit;
+  margin-left: 1.6666666665%;
+}
+div.focus div.focus-article h2{
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 120%;
+  padding: 30px 0;
+  transition: all 0.3s ease-in-out;
+}
+div.focus div.focus-article p{
+  color: #999;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 300;
+}
+div.focus div.date-author{
+  right: 1.6666666665%;
+  bottom: 50px;
+}
+div.focus div.pw-widget{
+  position: absolute;
+  bottom: 15px;
+  right: 1.6666666665%;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Second
+----------------------------------------------------------------------------------------------------------- */
+div.second{
+  height: 300px;
+  margin: 20px;
+}
+div.second div.second-img-frame{
+  height: inherit;
+  overflow: hidden;
+}
+div.second div.second-img-frame img{
+  height: 100%;
+  max-width: none;
+}
+div.second div.second-article{
+  width: 45%;
+  height: inherit;
+  margin: auto 2.5%;
+}
+div.second div.second-article h2{
+  display:block;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 120%;
+  padding-bottom:10px;
+  transition: all 0.3s ease-in-out;
+}
+div.second div.second-article p{
+  color: #999;
+  font-size: 15px;
+  line-height: 140%;
+  font-weight: 300;
+}
+div.second div.date-author{
+  right: 0;
+  bottom: 0px;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Twitter en Direct
+----------------------------------------------------------------------------------------------------------- */
+div#DirectTwitter{
+  width: 83%;
+  float: right;
+  padding: 10px 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 5px 2px rgba(102,102,102,.2);
+  height: 330px;
+  margin: 20px 20px 0 0;
+}
+div#DirectTwitter h6{
+  color: #f5c532;
+}
+div#DirectTwitter div.h6Line{
+  width: 100%;
+  background: #FFF;
+  padding-bottom: 5px;
+}
+div#DirectTwitter .h6Line span.line:after{
+  background: #f5c532 !important;
+}
+div#DirectTwitter div#twitterScroll{
+  max-height: 310px;
+  width: 100%;
+  padding-right: 10px;
+  overflow: hidden;
+}
+div#DirectTwitter div#twitterScroll:hover{
+  overflow-y: scroll;
+}
+/* -----------------------------------------------------------------------------------------------------------
+BlocArea
+----------------------------------------------------------------------------------------------------------- */
+ div.blocArea{
+    margin: 20px;
+    height: 322px;
+    box-shadow: 0px 0px 5px 2px rgba(102,102,102,.2);
+ }
+  div.blocArea .h6Line{
+    margin: 20px;
+    padding-top: 20px;
+  }
+ div.blocArea h6{
+  color: #f5c532;
+}
+ div.blocArea .h6Line span.line:after{
+  background: #f5c532 !important;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Survey
+----------------------------------------------------------------------------------------------------------- */
+div.survey{
+  background: #28272c;
+  box-shadow: 0px 0px 5px 2px rgba(102,102,102,.2);
+  margin: 0 10px 0 20px;
+  padding:2%;
+  width: 40%;
+  height:210px;
+}
+div.survey h2{
+  padding-top: 20px;
+  color: #FFF;
+  font-size: 28px;
+  letter-spacing: 0;
+  display: block;
+  line-height: 1.2;
+}
+div.survey h2 span{
+  color: #f5c532;
+}
+div.survey a.tKit-Button{
+  display: block;
+  color: #f5c532;
+  margin: 0 auto;
+  text-align: center;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Subscribe
+----------------------------------------------------------------------------------------------------------- */
+div.subscribe{
+  margin: 20px;
+  width: 44%;
+}
+div.subscribe p{
+  color: #999; 
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+div.subscribe button.tKit-Button{
+  float: right;
+  margin-top: 10px;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Archives
+----------------------------------------------------------------------------------------------------------- */
+div.archives{
+  margin:20px;
+}
+div.archives ul li{
+  width:31%;
+  margin: 10px;
+  display: inline-block;
+}
+div.archives ul li a{
+  transition: all .3s ease-in-out;
+}
+div.archives ul li a:hover{
+  transition: all .3s ease-in-out;
+}
+div.archives ul li:nth-child(5n-1), div.archives ul li:nth-child(5n+5){
+  width: 47.5%;
+}
+div.archives .archives-date{
+  color: #c1c1c2;
+  font-size: 12px;
+  margin:10px 0 5px 0;
+  display: block;
+}
+div.archives h3{
+  line-height: 1.2;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Post 1.000px
+----------------------------------------------------------------------------------------------------------- */
+section.post1000 div.date-author-1000{
+  text-align: center;
+  font-size: 14px;
+  color: #c1c1c2;
+  font-weight: 100;
+  margin-top: 20px;
+  clear: both;
+}
+section.post1000 div.date-author-1000 span.author{
+  display: block;
+  color: #f5c532;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+section.post1000 h1.titre_une{
+  letter-spacing: 0; 
+  line-height: 1.2; 
+  margin: 20px auto; 
+  display: block;
+  width: 660px;
+  text-align: center;
+  font-weight: 600;
+}
+section.post1000 .chapo{
+  width: 660px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+}
+section.post1000 a{color:#333;font-weight:100;}
+section.post1000 a:hover{color:#EB1C2E;}
+section.post1000 p{width:660px;display:block;margin:0 auto;font-size:16px;line-height:1.5;color:#999;font-weight:100;}
+section.post1000 div.lien-rebond{border:none;width: 660px;margin: 20px auto;}
+section.post1000 div.lien-rebond p.a-lire-aussi{font-size:14px;color:#666;letter-spacing:1px;}
+section.post1000 div.lien-rebond a{font-size:18px;font-weight:100;padding-top: 5px;}
+section.post1000 div.lien-rebond a span{color:#EB1C2E;}
+/* -----------------------------------------------------------------------------------------------------------
+Interactive
+----------------------------------------------------------------------------------------------------------- */
+div.interactive{
+  margin: 40px auto;
+  display: block;
+}
+div.interactive a.fullscreen{
+  color: #c1c1c2;
+  display: block;
+  padding: 15px 10px;
+  background: #F4F4F4;
+  margin-top: -5px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  transition: all .3s ease-in-out;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Post Footer
+----------------------------------------------------------------------------------------------------------- */
+div.post-footer{
+  background: #f4f4f4;
+  padding:20px;
+  box-shadow: 0px 5px 10px 0px rgba(102,102,102,.2);
+  z-index: 9;
+}
+div.post-footer>div{
+  width: 660px;
+  margin: 10px auto;
+}
+div.post-footer div.tags ul li{
+  display: inline-block;
+}
+div.post-footer div.tags ul li a{
+  background: #DDD;
+  padding: 7px 10px;
+  border-radius: 3px;
+  color: #999;
+}
+div.post-footer div.tags ul li a:hover{
+  background: #333;
+}
+div.share{
+  padding-top: 15px;
+  border-top: 1px solid #DDD;
+}
+div.share a.rubLogo{
+  display: inline-block;
+  background: url(../img/logoDataSpot.svg) center center no-repeat;
+  background-size: cover;
+  width: 135px;
+  height: 34px;
+  vertical-align: middle;
+}
+div.share div.pw-widget{
+  text-align: right;
+  float: right;
+}
+body.dataspot a.pw-size-small.pw-button{
+  margin-right: 7px !important;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Read More
+----------------------------------------------------------------------------------------------------------- */
+div.read-more{padding:20px;background: #f5c532;}
+div.read-more div.focus{box-shadow: none;height: 360px;}
+div.read-more div.focus div.date-author{bottom: 20px;}
+div.read-more .h6Line{margin: auto 20px;}
+/* -----------------------------------------------------------------------------------------------------------
+Full View Map
+----------------------------------------------------------------------------------------------------------- */
+html, body, div.codeIntegrated, #map{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.cartodb-header, .cartodb-overlay.overlay-text.desktop, .cartodb-share{
+  display: none !important;
+}
+header.full-view{position:absolute;width:100%;transition:all .3s ease-in-out;}
+section.full-view-header{
+  background: #FFF;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  z-index: 999 !important;
+  box-shadow: 0px 5px 20px 5px rgba(102,102,102,.2);
+  transition: all .3s ease-in-out;
+}
+section.full-view-header div.full-view-header-content{padding-top: 20px;z-index: 999;margin-left: 10px;}
+section.full-view-header div.full-view-share{float: right;top:0;padding-top: 7px; margin-right: 10px;}
+section.full-view-header div.full-view-header-content a.pictoTlg{
+  display: inline-block;
+  background: url(../img/picto-letelegramme.svg) center center no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  vertical-align: top;
+  margin-top: -3px;
+  margin-right: 10px;
+}
+section.full-view-header div.full-view-header-content a.rubLogo{width:135px;height:34px;vertical-align:top;}
+section.full-view-header div.full-view-header-content div.h1Plusdinfos{display: inline-block; text-align: center; margin: 5px auto 0 auto;width:70%;}
+section.full-view-header div.full-view-header-content h1{margin-left:20px;margin-right:10px;color: #666;font-size:19px;letter-spacing: 0;}
+section.full-view-header div.full-view-header-content a.plusdinfos{border-left:1px solid #c1c1c2;padding-left:10px;color:#999;font-size: 11px;text-transform:uppercase;font-weight: 100;letter-spacing: 0.5px;margin-top: -10px;}
+section.full-view-header div.full-view-header-content a.plusdinfos:hover{color:#EB1C2E;}
+div.pub-full-view{display:block;text-align:center;}
+header.full-view div.full-view-desc#full-view-desc{
+  padding:20px 20px 2px 20px;
+  height: 170px;
+  margin-top:-20px;
+  background: #FFF;
+  transition: all .3s ease-in-out;
+  opacity:0;
+}
+#full-view-desc:target{
+  margin-top:0px !important;
+  opacity: 1 !important;
+}
+header.full-view div.full-view-desc a.close-full-viex-desc{position: absolute;right:0;top:0px;text-align: center;line-height: 42px; width:42px; height:42px;z-index:9;}
+header.full-view div.desc-title h2{padding-right:10px;letter-spacing:0;display:block;font-size:25px;font-weight:bold;}
+header.full-view div.desc-title a{position:absolute;top: 132px;color:#fec422;}
+header.full-view div.desc-title a:hover{color: #999;}
+header.full-view div.desc-content{max-height: 140px;}
+header.full-view div.desc-content .column{max-width: 40%;padding:0 20px;}
+header.full-view div.desc-content p{line-height: 1.4;color: #999;font-weight:100;}
+/* --------- To Be Continued --------- */
+section.toBeContinued{
+  position: fixed;
+  bottom: 35px;
+  left: 20px;
+  background: #FFF;
+  padding:10px 20px;
+  border-radius:3px;
+  box-shadow: rgba(0,0,0,.2) 0 0 4px 2px;
+  max-width: 350px;
+  border: 1px solid #999;
+}
+section.toBeContinued p{font-size:11px;color:#666;font-weight:bold;letter-spacing:1px;text-transform: uppercase;padding-bottom: 10px}
+section.toBeContinued a{font-size:14px;font-weight:100;padding: 5px 0;display: block;}
+section.toBeContinued a span{color:#EB1C2E;}
+/* --------- CartoDB changes --------- */
+.cartodb-zoom{top:140px;z-index:9999 !important;}
+.less-z-index{z-index:9 !important;}
+/* -----------------------------------------------------------------------------------------------------------
+Dataspot
+----------------------------------------------------------------------------------------------------------- */
+/* --------- Pub --------- */
+body.dataspot .pub_leaderBoard{
+  padding-top: 20px;
+  display: block;
+}
+body.dataspot .fake_pub_300x250{
+  float: right;
+  margin: 20px 20px 0 0;
+}
+body.dataspot #adpurl_alternative_1{
+  margin: 0 auto;
+  text-align: center;
+}
+/* --------- Hot Spot --------- */
+section#hotSpot{
+  margin:20px 0;
+  padding: 20px;
+  background: #f5c532;
+  box-shadow: 0px 0px 5px 2px rgba(102,102,102,.2);
+}
+section#hotSpot .focus{background: #FFF;}
+section#hotSpot h6{color: rgba(0,0,0,.2);font-weight: 400;}
+section#hotSpot .h6Line span.line:after{background: rgba(0,0,0,.1) !important;}
+section#hotSpot .h6Line{margin: auto 20px;}
+/* --------- Post Footer --------- */
+section#dataspot-post-footer h6{color: rgba(0,0,0,.2);font-weight: 400;}
+section#dataspot-post-footer .h6Line span.line:after{background: rgba(0,0,0,.1) !important;}
+/* --------- Main container change --------- */
+body.dataspot{
+  background: #f4f4f4;
+}
+body.dataspot #ss_menu{
+  display: none;
+}
+body.dataspot div.main_container{
+  box-shadow: 0px 0px 15px 0px rgba(120,102,120,.2);
+  margin: 120px auto 0 auto;
+}
+body.dataspot div.encart_4cols.encart_grey.margin_top_40{
+  margin: 0;
+  padding: 20px;
+  box-shadow: 0px -5px 5px 0px rgba(102,102,102,.2);
+  border:none;
+}
+body.dataspot .body{
+  width: auto;
+}
+body.dataspot footer{
+  margin: auto 20px;
+}
+body.dataspot span.h3_large {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    width: 100%;
+    display: block;
+    border-top: 3px solid #333;
+}

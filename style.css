@@ -1,0 +1,268 @@
+section.quiz{
+	width: auto;
+	margin: 0 auto;
+	background: #2d6ba7;
+	box-shadow: 0px 0px 5px 0px rgba(102,102,102,.2);
+	margin-top: 50px;
+}
+/* -----------------------------------------------------------------------------------------------------------
+H6 & Line for each section
+----------------------------------------------------------------------------------------------------------- */
+
+div#sport h6{color: rgba(0,0,0,.2);font-weight: 400;}
+div#sport .h6Line span.line:after{background: rgba(0,0,0,.1) !important;}
+div#sport .h6Line{margin: auto 20px;}
+section.quiz div.h6Line {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Questions Content
+----------------------------------------------------------------------------------------------------------- */
+section.quiz div.questionsList{
+	background: #FFF;
+	margin:20px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+}
+section.quiz div.questionsList div.panels{display: none;}
+section.quiz div.questionsList div#panel0{display: block;}
+section.quiz div.questionsList div.panels div.image{
+	width: 66%;
+	height: 450px;
+	float: left;
+	background-size: cover;
+	background-position: center center;
+}
+section.quiz div.questionsList div.questions{
+	width: 30%;
+	float: right;
+	font-size: 16px;
+	font-weight: 100;
+	color: #999;
+	margin-top: 30px;
+	right: 2%;
+	z-index: 99;
+}
+section.quiz div.questionsList div.questions h5{
+	line-height: 150%;
+	font-weight: 100;
+}
+section.quiz div.questionsList div.questions ul{
+	padding-top:1px;
+}
+section.quiz div.questionsList div.questions ul li{
+	background: #f4f4f4;
+	margin-top: 20px;
+	padding: 15px 20px;
+	box-shadow: 1px 1px 5px 0px rgba(102,102,102,.2);
+    transition: all 0.3s ease-in-out;
+    width: 86%;
+}
+section.quiz div.questionsList div.questions ul li:hover{
+	background:#28272c;
+	padding-right:50px;
+	color: #FFF;
+	box-shadow: 0px 0px 5px 0px rgba(102,102,102,.5);
+	cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+section.quiz div.questionsList div.questions ul li.selected{
+	background: #666 !important;
+	color: #FFF;
+	padding: 15px 20px;
+	box-shadow: 1px 1px 5px 0px rgba(102,102,102,.2);
+    transition: all 0.3s ease-in-out;
+    width: 86%;
+    cursor: auto;
+}
+section.quiz div.questionsList div.questions ul li.right{
+	background: #a4cd63 !important;
+	color: #FFF !important;
+	cursor: auto;
+}
+section.quiz div.questionsList div.answers{
+	position: absolute;
+	width: 28%;
+	opacity: 0;
+	float: right;
+	right: 2%;
+	margin-top: 150px;
+	transition: all 0.3s ease-in-out;
+	z-index: 0;
+}
+section.quiz div.questionsList div.answers p{
+	color: #999;
+	line-height: 150%;
+	font-size: 15px;
+	font-weight: 100;
+}
+/* ============ Checked ============ */
+section.quiz div.questionsList div.panels.checked div.image{
+	width: 33%;
+	margin-right: 40px;
+	transition: all 0.2s ease-in-out;
+}
+section.quiz div.questionsList div.panels.checked div.questions{
+    float: left;
+    padding-right: 20px;
+    border-right: 1px solid #F4F4F4;
+    transition: all 0.4s ease-in-out;
+}
+section.quiz div.questionsList div.panels.checked div.questions ul li{
+	background: #f4f4f4;
+	margin-top: 20px;
+	padding: 15px 20px;
+	box-shadow: 1px 1px 5px 0px rgba(102,102,102,.2);
+    transition: all 0.4s ease-in-out;
+    width: 86%;
+    cursor: auto;
+    color: #999;
+  }
+section.quiz div.questionsList div.panels.checked div.answers{
+	opacity: 1;
+	transition: all 0.6s ease-in-out;
+}
+/* --------- Responsive 1.000px --------- */
+@media screen  and (max-width: 1000px){
+   section.quiz div.questionsList div.panels div.image{
+		width: auto;
+		float: none;
+	}
+	section.quiz div.questionsList div.questions{
+		width: auto;
+		float: none;
+		right: 0;
+		margin: 20px;
+		border:0;
+	}
+	section.quiz div.questionsList div.panels.checked div.image{
+		width: auto;
+		margin-right: 0;
+	}
+	section.quiz div.questionsList div.panels.checked div.questions{width: 40%;padding-right: 20px;}
+	section.quiz div.questionsList div.answers{
+		width: 40%;
+		right: none;
+		margin:30px;
+	}
+	section.quiz div.questionsList div.panels.checked div.answers{position: relative;}
+
+}
+/* --------- Responsive 750px --------- */
+@media screen  and (max-width: 750px){
+	section.quiz div.questionsList div.panels div.image{
+		width: auto;
+		max-height: 200px;
+		float: none;
+	}
+	section.quiz div.questionsList div.panels.checked div.questions{border:0;width: auto;padding:0;}
+	section.quiz div.questionsList div.answers{
+		width: auto;
+		float: none;
+		border-top: 1px solid #F4F4F4;
+		padding-top: 10px;
+		display: block;
+    	clear: both;
+	}
+}
+/* -----------------------------------------------------------------------------------------------------------
+Logo Quiz
+----------------------------------------------------------------------------------------------------------- */
+section.quiz div.logoQuiz{
+	margin-left: 20px;
+	background: url(http://www.letelegramme.fr/img/letelegramme_logo.png) center center no-repeat;
+	background-size: cover;
+	width: 100px;
+	height:18.8235294118px;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Controls (Next Questions, Result, etc..)
+----------------------------------------------------------------------------------------------------------- */
+section.quiz div.controlsQuiz{
+	text-align: right;
+	margin-right: 20px;
+	margin-top: -20px;
+	padding-bottom: 20px;
+}
+section.quiz div.controlsQuiz a.nextQuestion{
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: 100;
+	opacity: 0.3;
+	cursor:default;
+	display: inline-block;
+}
+section.quiz div.controlsQuiz a.nextQuestion.next{
+	opacity: 1;
+	cursor: pointer;
+}
+section.quiz div.controlsQuiz a.nextQuestion:after{
+	content: "\e60f";
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: 100;
+	line-height: 0.8;
+	font-size: 21px;
+	vertical-align: bottom;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Quiz evolution + color if right or wrong answer
+----------------------------------------------------------------------------------------------------------- */
+.evolution{
+	height: 5px;
+}
+.evolution li{
+	display: inline-block;
+	height: 5px;
+	vertical-align: top;
+	box-shadow: inset 2px 0px 0px 0px #FFF;
+}
+.evolution li.right{
+	background: #a4cd63 !important;
+}
+.evolution li.wrong{
+	background: #eb324e !important;
+}
+/* -----------------------------------------------------------------------------------------------------------
+Result screen
+----------------------------------------------------------------------------------------------------------- */
+div.result{
+	display: none;
+	background: #FFF;
+	height: 450px;
+	text-align: center;
+	padding:20px;
+}
+div.result p#resultScore{
+	font-size: 80px;
+	color: #DDD;
+	padding: 20px;
+	line-height: 115px;
+	border:5px solid #DDD;
+	width: 120px;
+	height: 120px;
+	margin: 50px auto;
+	border-radius: 50%;
+}
+div.result div#resultText{
+	width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #999;
+    font-size: 16px;
+}
+/* --------- Responsive 1.000px --------- */
+@media screen  and (max-width: 1000px){
+
+}
+/* --------- Responsive 750px --------- */
+@media screen  and (max-width: 750px){
+	div.result div#resultText{
+		width: auto;
+	    margin: 0 auto;
+	    margin-top: 50px;
+	    color: #999;
+	    font-size: 16px;
+	}
+}

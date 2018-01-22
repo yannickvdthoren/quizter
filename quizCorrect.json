@@ -1,0 +1,132 @@
+{
+	"questions" : 
+	[
+		{
+			"id" : 0,
+			"question" : "Le Paris S-G affrontait l'Olympique de Marseille (2-1) dimanche dernier. Combien de penaltys au total ?",
+			"choices" : [
+				{
+					"id": 0,
+					"choice":"Un penalty en faveur du  Paris S-G",
+					"correct" : "false"
+				},
+				{
+					"id": 1,
+					"choice":"Deux penaltys tirés avec succès par Ibrahimovic",
+					"correct" : "false"
+				},
+				{
+					"id": 2,
+					"choice":"Trois penaltys (deux en faveurs du Paris S-G et un raté par l’OM)",
+					"correct" : "true"
+				}
+			],
+			"explanations":"Zlatan Ibrahimovic a inscrit ses deux penaltys au contraire des Olympiens qui en ont raté un… Un match où les Parisiens ont tremblé jusqu'au bout, face à une équipe marseillaise à la hauteur de l'événement et qui peut avoir des regrets."
+		},
+		{
+			"id" : 1,
+			"question" : "On n’est pas sérieux quand on a dix-sept ans",
+			"choices" : [
+				{
+					"id": 0,
+					"choice":"Arthur Rimbaud",
+					"correct" : "true"
+				},
+				{
+					"id": 1,
+					"choice":"Guillaume Apollinaire",
+					"correct" : "false"
+				},
+				{
+					"id": 2,
+					"choice":"Aristote",
+					"correct" : "false"
+				}
+			],
+			"explanations":"Arthur Rimbaud is the good answer !"
+		},
+		{
+			"id" : 2,
+			"question" : "À vaincre sans péril, on triomphe sans gloire",
+			"choices" : [
+				{
+					"id":0,
+					"choice":"Victor Hugo",
+					"correct" : "false"
+				},
+				{
+					"id": 1,
+					"choice":"Pierre Corneille",
+					"correct" : "true"
+				},
+				{
+					"id": 2,
+					"choice":"François Ier",
+					"correct" : "false"
+				}
+			],
+			"explanations":"Pierre Corneille is the good answer !"
+		},
+		{
+			"id" : 3,
+			"question" : "L’homme est un loup pour l’homme",
+			"choices" : [
+				{
+					"id":0,
+					"choice":"Plaute",
+					"correct" : "true"
+				},
+				{
+					"id": 1,
+					"choice":"Euripide",
+					"correct" : "false"
+				},
+				{
+					"id": 2,
+					"choice":"Lucrèce",
+					"correct" : "false"
+				}
+			],
+			"explanations":"Plaute is the good answer !"
+		},
+		{
+			"id" : 4,
+			"question" : "Tout le monde savait que c’était impossible à faire. Puis un jour quelqu’un est arrivé qui ne le savait pas, et il l’a fait.",
+			"choices" : [
+				{
+					"id":0,
+					"choice":"Winston Churchill",
+					"correct" : "true"
+				},
+				{
+					"id": 1,
+					"choice":"Abraham Lincoln",
+					"correct" : "false"
+				},
+				{
+					"id": 2,
+					"choice":"Nelson Mandela",
+					"correct" : "false"
+				}
+			],
+			"explanations":"Winston Churchill is the good answer !"
+		}
+	],
+	"resultText" : [
+				{
+					"id":0,
+					"pourcent": 40,
+					"text":"Franchement votre connaissance de l'actualité sportive du week-end a des lacunes. <p>Pas de panique, rien n'est perdu : une lecture plus attentive du cahier sports du Télégramme de dimanche et lundi vous permettra de progresser au prochain essai. <p>Rendez-vous la semaine prochaine !"
+				},
+				{
+					"id": 1,
+					"pourcent": 70,
+					"text":"C'est pas mal, mais une lecture plus attentive du cahier sports du Télégramme de dimanche et lundi vous permettra de progresser au prochain essai. Rendez-vous la semaine prochaine !"
+				},
+				{
+					"id": 2,
+					"pourcent": 100,
+					"text":"Bravo vous avez bien suivi le week-end sportif, en lisant Le Télégramme bien-sûr. Merci et rendez-vous dans une semaine !"
+				}
+			]
+}

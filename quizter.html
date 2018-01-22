@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Quizter | Créer un nouveau Quizz</title>
+	<link rel="stylesheet" href="quizter.css">
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+	<div id="logo"></div>
+	<div class="interface">
+		<h1>Créer un nouveau quiz</h1>
+		<section class="createPanels welcome" id="panel1">
+			<form>
+				<h2>Entrez l'ID de l'article Léa</h2>
+				<input type="text" name="id-article" required="required" id="ID" placeholder="ex: 10827086">
+				<p class="faq">Pour trouver l'ID dans léa. Créez votre article. Dans les onglets du haut, cliquez sur " Propriétés ". Trouvez la ligne ID et copiez - collez là dans le champ.</p>
+				<button type="submit" value="Suivant" class="nextButton" id="welcomeButton" formtarget="_self">Suivant</button>
+			</form>
+		</section>
+		<section class="createPanels questions" id="panel2">
+			<form>
+				<h2>Saisissez vos questions</h2>
+				<label for="question" class="label">question</label>
+				<textarea name="Question" id="question"maxlength="156" required placeholder="Question limitée à 156 caractères..."></textarea>
+				<label class="label">Choix</label>
+				<input type="text" name="Choix 1" placeholder="Choix 1" required="required"><input type="checkbox" name="myCheck">
+				<input type="text" name="Choix 2" placeholder="Choix 2" required="required"><input type="checkbox" name="myCheck">
+				<input type="text" name="Choix 3" placeholder="Choix 3" required="required"><input type="checkbox" name="myCheck">
+				<div class="spacer"></div>
+				<p class="faq">Pour sélectionner la bonne réponse, cochez la case correspondante.</p>
+				<label for="reponse" class="label">Réponse</label>
+				<textarea name="Réponse" id="question"maxlength="156" required placeholder=""></textarea>
+				<label for="image" class="label">Image</label>
+				<input type="file" id="image" name="fileBrowser">
+				<button type="submit" value="ajouter" class="addButton" formtarget="_self">Ajouter</button> <button type="submit" value="ajouter" class="nextButton" formtarget="_self" id="questionButton">Suivant</button>
+			</form>
+		</section>
+		<section class="createPanels answers" id="panel3">
+				<form>
+				<h2>Tapez vos résultats</h2>
+				<label class="label">Mauvais résultat</label>
+				<textarea name="mauvais" id="mauvais" required="required">Franchement votre connaissance de l'actualité sportive du week-end a des lacunes. <p>Pas de panique, rien n'est perdu : une lecture plus attentive du cahier sports du Télégramme de dimanche et lundi vous permettra de progresser au prochain essai. <p>Rendez-vous la semaine prochaine !</textarea>
+				<label class="label">Bon résultat</label>
+				<textarea type="text" name="bon" placeholder="Choix 2" required="required">C'est pas mal, mais une lecture plus attentive du cahier sports du Télégramme de dimanche et lundi vous permettra de progresser au prochain essai. Rendez-vous la semaine prochaine !</textarea>
+				<label class="label">Résultat Excellent</label>
+				<textarea type="text" name="excellent" placeholder="Choix 3" required="required">Bravo vous avez bien suivi le week-end sportif, en lisant Le Télégramme bien-sûr. Merci et rendez-vous dans une semaine !</textarea>
+				<button type="submit" value="ajouter" class="nextButton" formtarget="_self" id="answersButton">suivant</button>
+			</form>
+		</section>
+		<section class="createPanels end" id="panel4">
+			<h2>Et c'est fini !</h2>
+			<div class="iframeCode">
+				<p class="faq">Copiez-collez ce code dans votre article :</p>
+			</div>
+		</section>
+		<div class="evolution">
+			<ul>
+				<li id="dot1"></li>
+				<li id="dot2"></li>
+				<li id="dot3"></li>
+				<li id="dot4"></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
